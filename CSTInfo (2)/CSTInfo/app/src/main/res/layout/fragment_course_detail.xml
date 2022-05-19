@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+           android:id="@+id/center_shim"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:visibility="invisible"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbName"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_alignBaseline="@id/tvName"
+        android:text="Name"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvName"
+            android:layout_toRightOf="@+id/center_shim"
+            android:text=""
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lbCode"
+            android:text="Code"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_alignBaseline="@id/tvCode"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCode"
+            android:text=""
+            android:layout_toRightOf="@+id/center_shim"
+            android:layout_below="@+id/tvName"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lbHours"
+            android:text="Hours"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_alignBaseline="@id/tvHours"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvHours"
+            android:text=""
+            android:layout_toRightOf="@+id/center_shim"
+            android:layout_below="@+id/tvCode"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lbCredits"
+            android:text="Credits"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_alignBaseline="@id/tvCredits"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCredits"
+            android:text=""
+            android:layout_toRightOf="@+id/center_shim"
+            android:layout_below="@+id/tvHours"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lbDesc"
+            android:text="Description"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvCredits"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDesc"
+            android:text=""
+            android:layout_below="@id/lbDesc"
+            />
+
+
+
+    </RelativeLayout>
+</ScrollView>
